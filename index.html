@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>คู่มือขายภาพ AI บน Adobe Stock สำหรับมือใหม่ | Jamdzy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Prompt', sans-serif;
             background-color: #050505;
             color: #ffffff;
+            /* เผื่อพื้นที่ด้านล่างให้ปุ่มลอย */
+            padding-bottom: 80px; 
         }
         .text-cyan-custom { color: #00E5FF; }
         .bg-gradient-btn {
             background: linear-gradient(90deg, #9b51e0 0%, #56ccf2 100%);
         }
         .bg-card-dark { background-color: #111111; }
+        
+        /* สไตล์สำหรับ FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-cyan-500 selection:text-white">
+<body class="antialiased selection:bg-cyan-500 selection:text-white relative">
 
-    <header class="container mx-auto px-4 py-12 md:py-20 max-w-5xl">
+    <div class="fixed bottom-0 left-0 w-full bg-black/80 backdrop-blur-lg border-t border-gray-800 p-4 z-50 flex justify-center items-center gap-4 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] transition-transform duration-300 transform translate-y-0" id="sticky-cta">
+        <div class="hidden md:block text-sm">
+            <span class="text-gray-400 line-through">1,490.-</span>
+            <span class="text-cyan-custom font-bold text-lg ml-2">599 บาท</span>
+        </div>
+        <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="bg-gradient-btn text-black font-bold text-lg px-8 py-2 md:py-3 rounded-full hover:opacity-90 transition transform hover:scale-105 w-full md:w-auto text-center shadow-[0_0_15px_rgba(0,229,255,0.3)]">
+            เริ่มกันเลย เย้ๆ! ➔
+        </a>
+    </div>
+
+    <header class="container mx-auto px-4 py-12 md:py-20 max-w-5xl overflow-hidden">
         <div class="flex flex-col md:flex-row items-center gap-10">
-            <div class="md:w-1/2 space-y-6">
+            <div class="md:w-1/2 space-y-6" data-aos="fade-right">
                 <h1 class="text-3xl md:text-5xl font-bold leading-tight">
                     คู่มือขายภาพ AI <br>
                     บน Adobe Stock <br>
@@ -37,13 +59,13 @@
                     <li>• ข้อควรระวัง และอื่น ๆ อีกเพียบ!</li>
                 </ul>
                 <div class="pt-4">
-                    <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-lg px-8 py-3 rounded-full hover:opacity-90 transition transform hover:scale-105">
+                    <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-lg px-8 py-3 rounded-full hover:opacity-90 transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,229,255,0.4)]">
                         เริ่มกันเลย เย้ๆ! ➔
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative w-64 md:w-80 h-auto rounded-xl overflow-hidden shadow-[0_0_30px_rgba(0,229,255,0.2)] border border-gray-800">
+            <div class="md:w-1/2 flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+                <div class="relative w-64 md:w-80 h-auto rounded-xl overflow-hidden shadow-[0_0_30px_rgba(0,229,255,0.2)] border border-gray-800 hover:shadow-[0_0_50px_rgba(0,229,255,0.4)] transition-shadow duration-500">
                     <img src="cover.jpg" alt="Cover eBook" class="w-full h-auto object-cover">
                 </div>
             </div>
@@ -51,7 +73,7 @@
     </header>
 
     <section class="bg-[#0a0a0a] py-16 border-y border-gray-800">
-        <div class="container mx-auto px-4 max-w-3xl text-center space-y-6">
+        <div class="container mx-auto px-4 max-w-3xl text-center space-y-6" data-aos="fade-up">
             <h2 class="text-2xl md:text-4xl font-bold text-cyan-custom">
                 ขายภาพ AI บน Adobe Stock
             </h2>
@@ -59,276 +81,207 @@
                 สำหรับคนทำงานประจำ <br>ที่อยากมีรายได้เสริมหลังเลิกงาน
             </h3>
             
-            <div class="text-left max-w-sm mx-auto space-y-3 mt-8">
+            <div class="text-left max-w-sm mx-auto space-y-3 mt-8" data-aos="fade-up" data-aos-delay="200">
                 <p class="flex items-center gap-3">✅ <span>เหมาะกับมือใหม่ 100%</span></p>
                 <p class="flex items-center gap-3">✅ <span>ไม่ต้องเก่งกราฟิก</span></p>
                 <p class="flex items-center gap-3">✅ <span>ไม่ต้องเก่งภาษาอังกฤษ</span></p>
                 <p class="flex items-center gap-3">✅ <span>ทำวันละ 1-2 ชั่วโมงก็เริ่มได้</span></p>
-                <p class="flex items-center gap-3 text-yellow-400">🎁 <span>แถม CustomGPT ช่วยคิดไอเดีย + คีย์เวิร์ดให้พร้อมใช้</span></p>
-                <p class="flex items-center gap-3 text-cyan-custom mt-4 font-bold">🔖 <span>ราคาเปิดตัว 599 บาท (จากปกติ 1,490 บาท)</span></p>
-            </div>
-
-            <div class="pt-8">
-                <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-lg px-8 py-3 rounded-full hover:opacity-90 transition transform hover:scale-105">
-                    เริ่มกันเลย ➔
-                </a>
+                <p class="flex items-center gap-3 text-yellow-400 bg-yellow-400/10 p-2 rounded-lg mt-2">🎁 <span>แถม CustomGPT ช่วยคิดไอเดีย + คีย์เวิร์ด</span></p>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
-        <div class="container mx-auto px-4 max-w-3xl text-center space-y-8">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                หลายคนรู้ว่า AI ทำเงินได้<br>
-                <span class="text-cyan-custom">แต่ติดตรง "ไม่รู้จะเริ่มยังไง"</span>
-            </h2>
-            <ul class="text-gray-300 space-y-2 text-lg">
-                <li>• สมัครยังไง?</li>
-                <li>• รับเงินยังไง?</li>
-                <li>• ภาพแบบไหนขายได้จริง?</li>
-                <li>• ทำไมบางคนไม่ผ่านรีวิว?</li>
-            </ul>
-            <div class="bg-card-dark p-8 rounded-2xl border border-gray-800 text-left md:text-center mt-8 shadow-lg">
-                <p class="text-lg font-bold text-cyan-custom mb-2">ความจริงคือ</p>
-                <p class="text-gray-300">ไม่ใช่ใคร ๆ ก็สุ่มทำแล้วขายได้<br>สิ่งที่สำคัญคือ <span class="text-white font-semibold">"วิธีคิด"</span> และ <span class="text-white font-semibold">"ลำดับขั้นตอน"</span><br>และนี่คือสิ่งที่ผมสรุปไว้ในเล่มนี้แล้วครับ</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#0a0a0a] py-16 border-y border-gray-800">
+    <section class="py-16 overflow-hidden">
         <div class="container mx-auto px-4 max-w-3xl text-center space-y-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-300">แต่เดี๋ยวนี้ใคร ๆ ก็เจนภาพเองได้ง่าย ๆ</h2>
-            <h3 class="text-3xl md:text-4xl font-bold text-cyan-custom">แล้วใครจะมาซื้อ?</h3>
-            <p class="text-gray-400 mt-4">นี่คือคำถามที่หลายคนสงสัย<br>และเป็นคำถามที่ดีมากเลยครับ</p>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-300" data-aos="fade-down">แต่เดี๋ยวนี้ใคร ๆ ก็เจนภาพเองได้ง่าย ๆ</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-cyan-custom" data-aos="fade-up" data-aos-delay="100">แล้วใครจะมาซื้อ?</h3>
             
-            <div class="space-y-4 mt-8">
+            <div class="space-y-4 mt-8" data-aos="zoom-in" data-aos-delay="200">
                 <p class="text-xl font-bold">คำตอบง่ายมาก:</p>
                 <p class="text-2xl md:text-3xl font-bold text-cyan-custom">เพราะคนส่วนใหญ่<br>ไม่ได้อยากเสียเวลาเจนภาพเองครับ</p>
             </div>
 
-            <p class="text-gray-300 mt-6 leading-relaxed">
-                หลายคนอยากได้ภาพที่พร้อมใช้งานทันที เอาไปลงโฆษณา ออกแบบงาน <br class="hidden md:block">
-                หรือใช้ในงานพรีเซนต์ต่าง ๆ มากกว่ามาเรียนรู้วิธีเจนภาพเอง
-            </p>
-
-            <div class="bg-black p-8 rounded-2xl border border-gray-800 mt-8 shadow-[0_0_15px_rgba(0,229,255,0.1)]">
-                <p class="text-gray-300 leading-relaxed">
-                    คุณกำลังขาย <span class="text-cyan-custom font-bold">"ความพร้อมใช้งาน"</span> ให้กับคนเหล่านั้นครับ<br>
-                    เพราะนักออกแบบ เจ้าของธุรกิจ และคนทำคอนเทนต์จำนวนมาก<br>
+            <div class="bg-black p-8 rounded-2xl border border-gray-800 mt-8 shadow-[0_0_15px_rgba(0,229,255,0.1)] relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="absolute top-0 left-0 w-2 h-full bg-cyan-custom"></div>
+                <p class="text-gray-300 leading-relaxed text-left md:text-center pl-4 md:pl-0">
+                    นักออกแบบ เจ้าของธุรกิจ และคนทำคอนเทนต์จำนวนมาก<br>
                     ไม่มีเวลามานั่งเจนภาพเองเป็นร้อย ๆ ภาพ เพื่อหาแค่ 1 ภาพที่ใช่<br>
-                    <span class="text-cyan-custom font-bold">แต่พวกเขาจะยินดีจ่ายเงินเพื่อดาวน์โหลดภาพที่พร้อมใช้จากคุณทันที</span><br>
+                    <span class="text-cyan-custom font-bold text-lg block mt-2">พวกเขาจะยินดีจ่ายเงินเพื่อดาวน์โหลดภาพที่พร้อมใช้จากคุณทันที</span><br>
                     และนั่นแหละครับ คือโอกาสของคุณ
                 </p>
-            </div>
-
-            <div class="pt-8">
-                <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-lg px-10 py-3 rounded-full hover:opacity-90 transition transform hover:scale-105">
-                    พร้อมแล้ววว ➔
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto px-4 py-16 max-w-4xl">
-        <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-cyan-custom">แล้วใน eBook นี้สอนเรื่องอะไรบ้าง?</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8 text-sm md:text-base text-gray-300">
-            <div class="space-y-6">
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 1: The Opportunity (โอกาสใหม่ในยุค AI)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 1: ภาพ Generative AI คืออะไร? ของจริงหรือแค่กระแส?</li>
-                        <li>บทที่ 2: ทำไมต้อง Adobe Stock?</li>
-                        <li>บทที่ 3: แผนการทำงาน 90 วัน สู่ $100 แรก</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 2: The Toolkit (เตรียมเครื่องมือให้พร้อมรบ)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 4: สรุป "เครื่องมือ" ทั้งหมดที่ต้องใช้ (ฟรีและไม่ฟรี)</li>
-                        <li>บทที่ 5: สรุปต้นทุน: ต้องใช้เงินเริ่มต้นที่แท้จริงเท่าไหร่?</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 3: The Idea Factory (คลังไอเดีย & การ Research)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 6: แนวคิด และแหล่งการหาไอเดียแบบไม่รู้จบ</li>
-                        <li>บทที่ 7: วิธีวิเคราะห์ Demand</li>
-                        <li>บทที่ 8: วิเคราะห์คู่แข่งขั้นสูงที่ขายดี</li>
-                        <li>บทที่ 9: สร้าง Prompt สำหรับเจนภาพ</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="space-y-6">
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 4: The Workflow (ขั้นตอนการทำงานจริง: จากภาพสู่เงิน)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 10: Workflow 1: สร้างภาพและ "คัดเลือก" ภาพที่ดีที่สุด</li>
-                        <li>บทที่ 11: Workflow 2: แก้ไขความสมบูรณ์ของภาพ</li>
-                        <li>บทที่ 12: Workflow 3: การฝัง/เช็ค Title/Keyword</li>
-                        <li>บทที่ 13: Workflow 4: การส่งภาพขึ้น Adobe Stock</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 5: The Gatekeeper (กฎเหล็กและวิธีแก้ปัญหา)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 15: กฎเหล็ก 10 ข้อของ Adobe Stock</li>
-                        <li>บทที่ 16: ทำอย่างไรให้ผ่านด่าน 50 ภาพแรก</li>
-                        <li>บทที่ 17: ลิมิตการส่งงาน และวิธีจัดการ (Submission Limits)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 7: The Future (ก้าวต่อไป: ต่อยอดรายได้ไม่สิ้นสุด)</h4>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>บทที่ 18: โดน Spam Loads ทำอย่างไร?</li>
-                        <li>บทที่ 19: โดนแบน (Banned) ต้องทำอย่างไร?</li>
-                        <li>[บทสรุป] จาก $100 สู่ $1,000: เส้นทางสู่ Passive Income</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
 
     <section class="bg-[#0a0a0a] py-16 border-y border-gray-800">
-        <div class="container mx-auto px-4 max-w-3xl text-center space-y-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-cyan-custom" data-aos="fade-up">แล้วใน eBook นี้สอนเรื่องอะไรบ้าง?</h2>
             
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-cyan-custom mb-6">โบนัสพิเศษ</h2>
-                <div class="bg-card-dark p-6 md:p-8 rounded-2xl border border-yellow-600/30 inline-block text-left shadow-[0_0_20px_rgba(202,138,4,0.1)]">
-                    <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-4 flex items-center gap-2">
-                        🎁 CustomGPT 3 ตัว (ผมทำไว้ให้แล้ว)
-                    </h3>
-                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
-                        <li>ช่วยคิด Long-tail Keyword</li>
-                        <li>แปลงภาษาไทย / สรุปอิงค์เจ็ทเป็นไอเดียภาพ</li>
-                        <li>เขียน Title + Keyword ตาม SEO ของ Adobe Stock</li>
-                    </ul>
-                    <p class="mt-4 text-cyan-custom font-semibold">ช่วยลดเวลาคิดงานลงได้มาก ให้คุณโฟกัสแค่ "ทำภาพ" ก็พอแล้ว</p>
+            <div class="grid md:grid-cols-2 gap-8 text-sm md:text-base text-gray-300">
+                <div class="space-y-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="bg-card-dark p-6 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-colors">
+                        <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 1: The Opportunity</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>ภาพ Generative AI คืออะไร? กระแสหรือของจริง?</li>
+                            <li>ทำไมต้อง Adobe Stock?</li>
+                            <li>แผนการทำงาน 90 วัน สู่ $100 แรก</li>
+                        </ul>
+                    </div>
+                    <div class="bg-card-dark p-6 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-colors">
+                        <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 2 & 3: เครื่องมือ & คลังไอเดีย</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>สรุป "เครื่องมือ" และต้นทุนที่ต้องใช้</li>
+                            <li>แนวคิด และแหล่งการหาไอเดียแบบไม่รู้จบ</li>
+                            <li>วิธีวิเคราะห์ Demand และคู่แข่งที่ขายดี</li>
+                            <li>สร้าง Prompt สำหรับเจนภาพ</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-cyan-custom mb-6">เหมาะกับใคร?</h2>
-                <div class="text-left max-w-sm mx-auto space-y-3">
-                    <p class="flex items-center gap-3">✅ <span>คนทำงานประจำที่อยากมีรายได้เสริม</span></p>
-                    <p class="flex items-center gap-3">✅ <span>คนที่ไม่อยากออกกล้อง</span></p>
-                    <p class="flex items-center gap-3">✅ <span>คนที่ไม่ถนัดคุยกับลูกค้า</span></p>
-                    <p class="flex items-center gap-3">✅ <span>คนที่อยากเริ่มแบบไม่หลงทาง</span></p>
-                    <p class="flex items-center gap-3 text-red-400 font-semibold mt-4">❌ <span>ไม่เหมาะกับคนที่อยากรวยเร็วภายใน 7 วัน</span></p>
+                <div class="space-y-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="bg-card-dark p-6 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-colors">
+                        <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 4: The Workflow (จากภาพสู่เงิน)</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>สร้างภาพและ "คัดเลือก" ภาพที่ดีที่สุด</li>
+                            <li>แก้ไขความสมบูรณ์ของภาพ</li>
+                            <li>การฝัง/เช็ค Title/Keyword</li>
+                            <li>การส่งภาพขึ้น Adobe Stock</li>
+                        </ul>
+                    </div>
+                    <div class="bg-card-dark p-6 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-colors">
+                        <h4 class="text-cyan-custom font-bold text-lg mb-2">Part 5-7: กฎเหล็ก & อนาคต</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>กฎ 10 ข้อ และวิธีผ่าน 50 ภาพแรก</li>
+                            <li>จัดการ Submission Limits และ Spam Loads</li>
+                            <li>จาก $100 สู่ $1,000: เส้นทางสู่ Passive Income</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-16">
-        <div class="container mx-auto px-4 max-w-3xl text-center space-y-8">
-            <h2 class="text-2xl md:text-4xl font-bold">
-                นี่คือตัวอย่างรายได้จริง<br>
-                <span class="text-cyan-custom">จากการขายภาพ AI ของผมเองครับ</span>
-            </h2>
-
-            <div class="bg-white text-black p-6 rounded-xl shadow-lg max-w-sm mx-auto mt-8 font-medium">
-                <table class="w-full text-left">
-                    <tbody class="divide-y divide-gray-200">
-                        <tr>
-                            <td class="py-3 text-gray-600">ไตรมาส 4 ของ 2025</td>
-                            <td class="py-3 text-right">US$1,222.47</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 text-gray-600">ไตรมาส 3 ของ 2025</td>
-                            <td class="py-3 text-right">US$1,856.87</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 text-gray-600">ไตรมาส 2 ของ 2025</td>
-                            <td class="py-3 text-right">US$1,695.62</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 text-gray-600">ไตรมาส 1 ของ 2025</td>
-                            <td class="py-3 text-right font-bold">US$2,676.73</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="space-y-6 text-gray-300 text-lg md:text-xl max-w-2xl mx-auto text-left md:text-center pt-6">
-                <p>นี่คือรายได้รวมตลอดทั้งปี 2025 จากการขายภาพบน Adobe Stock<br>ตัวเลขนี้ไม่ได้เกิดขึ้นภายในไม่กี่วัน และไม่ได้มาจากโชค</p>
-                
-                <p class="text-cyan-custom font-semibold">
-                    มันเกิดจากการอัปโหลดภาพอย่างสม่ำเสมอ<br>
-                    เลือกแนวภาพที่ตลาดต้องการ<br>
-                    และทำตามขั้นตอนที่ถูกต้อง
-                </p>
-
-                <p>
-                    รายได้อาจไม่ได้พุ่งทันทีในเดือนแรก<br>
-                    แต่เมื่อสะสมจำนวนภาพมากขึ้น<br>
-                    ยอดขายจะเริ่มค่อย ๆ เติบโตตามจำนวนผลงาน
-                </p>
-
-                <p>
-                    ผมไม่ได้บอกว่าทุกคนจะได้เท่ากัน<br>
-                    ผลลัพธ์ขึ้นอยู่กับเวลา ความสม่ำเสมอ และความตั้งใจของแต่ละคน
-                </p>
-
-                <h3 class="text-xl md:text-2xl font-bold text-white pt-4">แล้วถ้าคุณเริ่มวันนี้ละ?</h3>
-                <p>
-                    คุณกำลังสร้าง <span class="text-cyan-custom font-bold">"สินทรัพย์ดิจิทัล"</span> ที่มีโอกาสทำเงินได้ในระยะยาว<br>
-                    คุณอาจไม่ได้เห็นตัวเลขแบบนี้ในสัปดาห์แรก<br>
-                    แต่ทุกภาพที่คุณอัปโหลด<br>
-                    คือโอกาสในการสร้างรายได้เพิ่มขึ้นในอนาคต
-                </p>
-
-                <p class="font-bold text-white pt-2">
-                    เริ่มจากศูนย์ ทำตามขั้นตอน และค่อย ๆ สะสมผลงาน<br>
-                    นี่คือแนวคิดที่อยู่ใน eBook เล่มนี้ครับ
-                </p>
             </div>
         </div>
     </section>
 
-    <section class="bg-gradient-to-b from-[#0a0a0a] to-[#050505] py-20 border-t border-gray-800">
-        <div class="container mx-auto px-4 max-w-2xl text-center space-y-6">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-500 line-through decoration-red-500 decoration-2">1,490 บาท คือราคาที่ผมตั้งไว้ในใจ</h2>
-            <p class="text-lg text-gray-300 mt-4">คุณสามารถนำไปใช้สร้างรายได้แบบผมเลย<br>ผมหวังว่าทั้ง eBook ของผมจะช่วยคุณได้อย่างคุ้มค่าที่สุด</p>
+    <section class="py-16 container mx-auto px-4 max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8" data-aos="fade-up">คำถามที่พบบ่อย (FAQ)</h2>
+        
+        <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+            <details class="group bg-card-dark border border-gray-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-lg">
+                    <span>จ่ายเงินแล้ว รับไฟล์ทางไหน?</span>
+                    <span class="transition group-open:rotate-180 text-cyan-custom">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-400 px-5 pb-5 leading-relaxed">
+                    เมื่อคุณชำระเงินผ่านระบบ Stripe (ตัดบัตรเครดิต/เดบิต/PromptPay) สำเร็จ ระบบจะส่งลิงก์สำหรับดาวน์โหลด eBook ไฟล์ PDF รวมถึงไฟล์โบนัสทั้งหมด เข้าไปที่อีเมลของคุณโดยอัตโนมัติทันทีครับ
+                </div>
+            </details>
             
-            <p class="text-gray-400 mt-6 text-lg md:text-xl">
-                แต่ก่อนที่คุณจะกดซื้อ ผมขอความช่วยเหลือจากคุณหน่อยครับ<br>
-                ผมอยากเก็บ Feedback เพิ่ม เอามาพัฒนาหนังสือเล่มนี้ครับ
-            </p>
+            <details class="group bg-card-dark border border-gray-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-lg">
+                    <span>ไม่มีพื้นฐานด้าน AI และกราฟิกเลย ทำได้ไหม?</span>
+                    <span class="transition group-open:rotate-180 text-cyan-custom">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-400 px-5 pb-5 leading-relaxed">
+                    ทำได้ 100% ครับ! เนื้อหาในเล่มถูกออกแบบมาสำหรับมือใหม่โดยเฉพาะ สอนตั้งแต่แนวคิดการทำงาน การใช้เครื่องมือ ไปจนถึงขั้นตอนส่งขายแบบจับมือทำ ไม่จำเป็นต้องใช้ Photoshop เก่งก็ขายได้ครับ
+                </div>
+            </details>
 
-            <p class="text-gray-400 text-lg md:text-xl">
-                ด้วยความที่นี่เป็น eBook เล่มแรกของผม<br>
-                เลยอยากให้สิทธิพิเศษกับคนกลุ่มแรกที่สนับสนุนผมครับ<br>
-                คนที่ไม่ได้อยากทำเล่นๆ และตั้งใจลงมือทำจริงๆ<br>
-                แล้วเอา Feedback มาปรับให้มันดีขึ้นไปอีก<br>
-                (คิดไว้ว่าประมาณ 100 คนแรก)
-            </p>
+            <details class="group bg-card-dark border border-gray-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-lg">
+                    <span>ต้องเก่งภาษาอังกฤษไหม?</span>
+                    <span class="transition group-open:rotate-180 text-cyan-custom">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-400 px-5 pb-5 leading-relaxed">
+                    ไม่ต้องเลยครับ โบนัส CustomGPT 3 ตัวที่ผมเตรียมไว้ให้ จะทำหน้าที่เป็นผู้ช่วยในการแปลงภาษาไทยเป็น Prompt และช่วยคิด Keyword ภาษาอังกฤษให้คุณพร้อมก๊อปปี้ไปวางขายได้ทันทีครับ
+                </div>
+            </details>
+        </div>
+    </section>
 
+    <section class="bg-gradient-to-b from-[#0a0a0a] to-[#050505] py-20 border-t border-gray-800 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="container mx-auto px-4 max-w-2xl text-center space-y-6" data-aos="zoom-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-500 line-through decoration-red-500 decoration-2">1,490 บาท</h2>
+            
             <p class="text-xl font-bold text-white mt-8">
-                ถ้าคุณพร้อมรับข้อเสนอนี้<br>
-                <span class="text-cyan-custom">ราคานี้แทนคำขอบคุณที่สนับสนุนผมครับ</span>
+                ถ้าคุณพร้อมเริ่มต้นสร้างสินทรัพย์ดิจิทัล<br>
+                <span class="text-cyan-custom">ราคานี้แทนคำขอบคุณที่สนับสนุนผมครับ (รับแค่ 100 ท่านแรก)</span>
             </p>
             
-            <div class="text-6xl md:text-8xl font-black text-white py-8 tracking-tight drop-shadow-[0_0_25px_rgba(0,229,255,0.5)]">
+            <div class="text-6xl md:text-8xl font-black text-white py-4 tracking-tight drop-shadow-[0_0_25px_rgba(0,229,255,0.5)]">
                 599 <span class="text-3xl md:text-4xl text-cyan-custom">บาท</span>
             </div>
-            
-            <div class="pt-4 pb-12">
-                <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-xl md:text-2xl px-12 py-5 rounded-full shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:shadow-[0_0_40px_rgba(0,229,255,0.7)] transition transform hover:-translate-y-1 w-full md:w-auto">
-                    เริ่มกันเลย เย้ๆ! ➔
-                </a>
-            </div>
 
-            <div class="flex justify-between items-center text-xs text-gray-600 border-t border-gray-800 pt-6">
-                <span>Terms & Support</span>
-                <span>Privacy Policy</span>
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 inline-block mx-auto mb-8 shadow-[0_0_20px_rgba(239,68,68,0.2)]">
+                <p class="text-red-400 font-semibold mb-2 text-sm">สิทธิพิเศษนี้จะหมดเวลาในอีก</p>
+                <div class="flex gap-4 justify-center text-white font-bold text-2xl" id="countdown">
+                    <div class="flex flex-col items-center"><span id="hours">02</span><span class="text-xs font-normal text-gray-400">ชั่วโมง</span></div>
+                    <span class="text-red-500">:</span>
+                    <div class="flex flex-col items-center"><span id="minutes">15</span><span class="text-xs font-normal text-gray-400">นาที</span></div>
+                    <span class="text-red-500">:</span>
+                    <div class="flex flex-col items-center"><span id="seconds">45</span><span class="text-xs font-normal text-gray-400">วินาที</span></div>
+                </div>
+            </div>
+            
+            <div class="pt-2 pb-12 w-full">
+                <a href="https://buy.stripe.com/5kQ7sMaPA5bffVdcKl43S04" class="inline-block bg-gradient-btn text-black font-bold text-xl md:text-2xl px-12 py-5 rounded-full shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:shadow-[0_0_40px_rgba(0,229,255,0.7)] transition transform hover:-translate-y-1 w-full md:w-auto">
+                    รับราคาพิเศษ 599.- คลิก! ➔
+                </a>
             </div>
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // ความเร็วของการเฟด (0.8 วินาที)
+            once: true, // ให้แสดงอนิเมชั่นแค่ครั้งเดียวตอนเลื่อนผ่าน
+            offset: 100 // เลื่อนมาถึงระยะ 100px ถึงเริ่มเฟด
+        });
+
+        // 2. Countdown Timer Script (ตั้งเวลาหลอก 2 ชม. 15 นาที เพื่อสร้างความตื่นตัว)
+        function startTimer() {
+            let timeInSeconds = (2 * 60 * 60) + (15 * 60) + 45; // 2h 15m 45s
+            
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            const timer = setInterval(() => {
+                const h = Math.floor(timeInSeconds / 3600);
+                const m = Math.floor((timeInSeconds % 3600) / 60);
+                const s = timeInSeconds % 60;
+
+                hoursEl.textContent = h.toString().padStart(2, '0');
+                minutesEl.textContent = m.toString().padStart(2, '0');
+                secondsEl.textContent = s.toString().padStart(2, '0');
+
+                if (timeInSeconds > 0) {
+                    timeInSeconds--;
+                } else {
+                    // ถ้านับถอยหลังจบ ให้เริ่มใหม่ (ให้ดูเหมือนเวลาหมดสิ้นวัน)
+                    timeInSeconds = (23 * 60 * 60) + (59 * 60); 
+                }
+            }, 1000);
+        }
+        startTimer();
+
+        // 3. Script ปิด Sticky Button ถ้าเลื่อนลงมาถึงปุ่มใหญ่ด้านล่างแล้ว
+        window.addEventListener('scroll', function() {
+            const stickyCta = document.getElementById('sticky-cta');
+            // เช็คว่าเลื่อนลงมาเกือบสุดหรือยัง (ปรับระยะตามต้องการ)
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 400) {
+                stickyCta.style.transform = 'translateY(150%)'; // ซ่อนปุ่มลอย
+            } else {
+                stickyCta.style.transform = 'translateY(0)'; // โชว์ปุ่มลอย
+            }
+        });
+    </script>
 </body>
-
 </html>
-
